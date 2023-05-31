@@ -4,11 +4,11 @@ on:
   push
 
 env:
-  AZURE_WEBAPP_NAME: partsunlimited-web-2023ivan   # replace suffix
+  AZURE_WEBAPP_NAME: partsunlimited-web-2023AGIT   # replace suffix
   AZURE_WEBAPP_PACKAGE_PATH: '.'
-  DEPLOYMENT_SLOT: prod
+  DEPLOYMENT_SLOT: staging
   DOTNET_VERSION: '3.1'
-  AZURE_RESOURCEGROUP_NAME: hands-on-lab-2023ivan  # replace suffix  
+  AZURE_RESOURCEGROUP_NAME: hands-on-lab-2023AGIT  # replace suffix  
   
 jobs:
   build-and-deploy:
