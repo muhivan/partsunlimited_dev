@@ -20,5 +20,9 @@
     "load-grunt-tasks": "^5.1.0",
     "node-sass": "^5.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "config": "npm config set python python2.7.18",
+    "grunt": "grunt"
+  }
 }
