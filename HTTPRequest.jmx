@@ -1,1 +1,0 @@
-jmeter -n -t HTTPRequest.jmx -l result.jtl -e -o reports
