@@ -68,7 +68,7 @@ namespace PartsUnlimited.Controllers
 
             // TODO [EF] We don't query related data as yet, so the OrderByDescending isn't doing anything
             return _db.Products
-                .OrderByDescending(a => a.OrderDetails.Count())
+                .OrderByDescending(a => a.OrderDetails.Count)
                 .Take(count)
                 .ToList();
         }
