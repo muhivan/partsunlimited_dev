@@ -30,4 +30,5 @@ These labs are used as part of the **Microsoft Professional Program (MPP) with D
 
 **Media Elements and Templates.** You may copy and use images, clip art, animations, sounds, music, shapes, video clips and templates provided with the sample application and identified for such use in documents and projects that you create using the sample application. These use rights only apply to your use of the sample application and you may not redistribute such media otherwise.
 
-**Testing gitpush 1** testing push1 
+**Testing gitpush 1** testing push1
+**Testing gitpush 2** testing push2 -ridho nurul adilla 
