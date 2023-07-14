@@ -13,6 +13,15 @@ namespace PartsUnlimited
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args).Build();
+            // Set environment variables
+            string releaseVersion = "1.0";
+            string buildVersion = "12345";
+            string releaseProduct = "AGIT";
+
+            // Set environment variables
+            Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
+            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", buildVersion);
+            Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", releaseProduct);
 
             using (var scope = host.Services.CreateScope())
             {
