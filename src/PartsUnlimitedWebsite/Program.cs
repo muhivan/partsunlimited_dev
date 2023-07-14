@@ -15,7 +15,7 @@ namespace PartsUnlimited
             var host = BuildWebHost(args).Build();
             // Set environment variables
             string releaseVersion = "1.0";
-            string buildVersion = "12345";
+            string buildVersion = "2023-06-05";
             string releaseProduct = "AGIT";
 
             // Set environment variables
