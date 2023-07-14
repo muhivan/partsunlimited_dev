@@ -32,3 +32,4 @@ These labs are used as part of the **Microsoft Professional Program (MPP) with D
 
 **Testing gitpush 1** testing push1
 **Testing gitpush 2** testing push2 -ridho nurul adilla 
+**Testing gitpush 3** testing push3 -ridho nurul 
