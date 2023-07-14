@@ -17,12 +17,12 @@ namespace PartsUnlimited
             DateTime currentDateTime = DateTime.Now;
             string formattedDateTime = currentDateTime.ToString("dddd, dd MMMM yyyy HH:mm:ss");
             string releaseVersion = "1.0";
-            string buildVersion = formattedDateTime;
+            //string buildVersion = formattedDateTime;
             string releaseProduct = "AGIT-DCCS";
 
             // Set environment variables
             Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
-            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", buildVersion);
+            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", formattedDateTime);
             Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", releaseProduct);
 
             using (var scope = host.Services.CreateScope())
