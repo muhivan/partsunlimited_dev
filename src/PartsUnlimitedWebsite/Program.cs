@@ -15,7 +15,8 @@ namespace PartsUnlimited
             var host = BuildWebHost(args).Build();
             // Set environment variables
             //DateTime currentDateTime = DateTime.Now;
-            string formattedDateTime = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
+            DateTime now = DateTime.Now;
+            string currentDateTime = now.ToString("yyyy-MM-dd hh:mm:ss");
             string releaseVersion = "1.0";
             //string buildVersion = formattedDateTime;
             string releaseProduct = "AGIT-DCCS";
