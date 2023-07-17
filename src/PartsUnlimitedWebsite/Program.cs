@@ -23,7 +23,7 @@ namespace PartsUnlimited
 
             // Set environment variables
             Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
-            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", urrentDateTime);
+            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", currentDateTime);
             Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", releaseProduct);
 
             using (var scope = host.Services.CreateScope())
