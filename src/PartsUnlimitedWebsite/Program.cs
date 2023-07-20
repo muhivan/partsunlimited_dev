@@ -14,22 +14,25 @@ namespace PartsUnlimited
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args).Build();
-            DateTime now = DateTime.Now;
+            //DateTime now = DateTime.Now;
             //currentDateTime = now.ToString("yyyy-MM-dd hh:mm:ss");
-            string releaseVersion = "1.1";
+            //string releaseVersion = "1.1";
             //string currentDateTime = "20-07-2023";
             //string buildVersion = "20-07-2023";
-            string releaseProduct = "AGIT-DCCS-ITSM";
-            Assembly assembly = Assembly.GetExecutingAssembly();
-            Version version = assembly.GetName().Version;
+            //string releaseProduct = "AGIT-DCCS-ITSM";
+            //Assembly assembly = Assembly.GetExecutingAssembly();
+            //Version version = assembly.GetName().Version;
 
             // Convert the Version object to a string
-            string versionString = version.ToString();
+            //string versionString = version.ToString();
 
             // Set environment variables
-            Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
-            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", versionString);
-            Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", releaseProduct);
+            //Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
+            //Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", versionString);
+            //Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", releaseProduct);
+            Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", "1.1");
+            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", "20-07-2023");
+            Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", "AGIT-DCCS-ITSM");
 
             using (var scope = host.Services.CreateScope())
             {
