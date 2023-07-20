@@ -5,6 +5,7 @@
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <AssemblyName>PartsUnlimitedWebsite</AssemblyName>
     <AssemblyVersion>1.0.0.*</AssemblyVersion>
+    <Deterministic>false</Deterministic>
     <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
 	<AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <UserSecretsId>aspnet-PartsUnlimitedWebsite-88B5164A-732F-489C-B25E-AC693ECEB5FB</UserSecretsId>
