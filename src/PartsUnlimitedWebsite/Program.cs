@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,12 +18,17 @@ namespace PartsUnlimited
             //currentDateTime = now.ToString("yyyy-MM-dd hh:mm:ss");
             string releaseVersion = "1.1";
             //string currentDateTime = "20-07-2023";
-            string buildVersion = "20-07-2023";
+            //string buildVersion = "20-07-2023";
             string releaseProduct = "AGIT-DCCS-ITSM";
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            Version version = assembly.GetName().Version;
+
+            // Convert the Version object to a string
+            string versionString = version.ToString();
 
             // Set environment variables
             Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
-            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", buildVersion);
+            Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", versionString);
             Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", releaseProduct);
 
             using (var scope = host.Services.CreateScope())
