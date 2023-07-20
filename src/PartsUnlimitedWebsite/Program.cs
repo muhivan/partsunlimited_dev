@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using System;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using PartsUnlimited.Models;
 using Microsoft.Extensions.Hosting;
-using System;
 
 namespace PartsUnlimited
 {
@@ -14,8 +14,9 @@ namespace PartsUnlimited
         {
             var host = BuildWebHost(args).Build();
             DateTime now = DateTime.Now;
-            currentDateTime = now.ToString("yyyy-MM-dd hh:mm:ss");
+            //currentDateTime = now.ToString("yyyy-MM-dd hh:mm:ss");
             string releaseVersion = "1.1";
+            currentDateTime = "20-07-2023";
             //string buildVersion = formattedDateTime;
             string releaseProduct = "AGIT-DCCS-ITSM";
 
