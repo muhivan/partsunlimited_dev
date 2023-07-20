@@ -1,10 +1,10 @@
-﻿using System;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using PartsUnlimited.Models;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace PartsUnlimited
 {
@@ -13,14 +13,11 @@ namespace PartsUnlimited
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args).Build();
-            // Set environment variables
-            //DateTime currentDateTime = DateTime.Now;
-            //git baru
             DateTime now = DateTime.Now;
-            string currentDateTime = now.ToString("yyyy-MM-dd hh:mm:ss");
+            currentDateTime = now.ToString("yyyy-MM-dd hh:mm:ss");
             string releaseVersion = "1.1";
             //string buildVersion = formattedDateTime;
-            string releaseProduct = "AGIT-DCCS";
+            string releaseProduct = "AGIT-DCCS-ITSM";
 
             // Set environment variables
             Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
