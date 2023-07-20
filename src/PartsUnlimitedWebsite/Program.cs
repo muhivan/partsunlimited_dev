@@ -16,7 +16,7 @@ namespace PartsUnlimited
             DateTime now = DateTime.Now;
             //currentDateTime = now.ToString("yyyy-MM-dd hh:mm:ss");
             string releaseVersion = "1.1";
-            currentDateTime = "20-07-2023";
+            string currentDateTime = "20-07-2023";
             //string buildVersion = formattedDateTime;
             string releaseProduct = "AGIT-DCCS-ITSM";
 
