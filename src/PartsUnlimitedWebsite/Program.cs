@@ -25,7 +25,7 @@ namespace PartsUnlimited
 
             // Convert the Version object to a string
             //string versionString = version.ToString();
-            //test
+            //test lagi
             // Set environment variables
             //Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
             //Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", versionString);
