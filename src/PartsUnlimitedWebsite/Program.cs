@@ -30,9 +30,9 @@ namespace PartsUnlimited
             //Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", releaseVersion);
             //Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", versionString);
             //Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", releaseProduct);
-            Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", "1.1");
+            Environment.SetEnvironmentVariable("DT_RELEASE_VERSION", "1.5");
             Environment.SetEnvironmentVariable("DT_RELEASE_BUILD_VERSION", "20-07-2023");
-            Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", "AGIT-DCCS-ITSM");
+            Environment.SetEnvironmentVariable("DT_RELEASE_PRODUCT", "AGIT-DCCS-ITOM");
 
             using (var scope = host.Services.CreateScope())
             {
